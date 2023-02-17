@@ -3,7 +3,8 @@ html {
     font-size: 16px;
     color: #183A1D;
     background-color: #FEFBE9;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 a {
     color: #39f;
@@ -114,3 +115,23 @@ background-color: #F0A04B33;
 .neutral {
     background-color:#88cfdf ;
 }
+button {
+    background-color: #183A1D;
+    color: #FEFBE9;
+    border:none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    width: 250px;
+    margin-bottom: 100px;
+  }
+button:hover {
+    color: #39f;
+}
+.flex_b {
+    display: flex;
+  } 
+.center_b {
+    justify-content: center;
+  }

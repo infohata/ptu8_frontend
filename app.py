@@ -47,6 +47,10 @@ def edvard_p():
 def egle():
     return render_template("egle.html")
 
+@app.route('/egle_grid/')
+def egle_grid():
+    return render_template("egle_grid.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
