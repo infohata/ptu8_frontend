@@ -9,6 +9,7 @@ a {
 }
 p {
     padding: 8px 16px;
+    text-align: center;
 }
 h1, h2 {
     margin: 0;
@@ -25,16 +26,22 @@ h1, h2{
     margin-bottom: 10;
     text-align: center;
 }
-
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    align-items:center;
+}
 .content {
     background-color: #FEFBE9;
     text-align: center;
 }
 
 .tree {
-    width: 70%;
+    width: 560px;
     max-width: 800px;
-    height: 500px;
+    height: 315px;
     background-image: url('https://images.pexels.com/photos/3280174/pexels-photo-3280174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
     background-position: center;
