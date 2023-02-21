@@ -3,12 +3,15 @@ html {
     font-size: 16px;
     color: #183A1D;
     background-color: #FEFBE9;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 a {
     color: #39f;
 }
 p {
     padding: 8px 16px;
+    text-align: center;
 }
 h1, h2 {
     margin: 0;
@@ -25,16 +28,27 @@ h1, h2{
     margin-bottom: 10;
     text-align: center;
 }
-
+.flex_up {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    align-items:center;
+}
 .content {
     background-color: #FEFBE9;
     text-align: center;
 }
 
 .tree {
-    width: 70%;
-    max-width: 800px;
-    height: 500px;
+    width: 560px;
+    max-width: 100%;
+    height: 315px;
     background-image: url('https://images.pexels.com/photos/3280174/pexels-photo-3280174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
     background-position: center;
@@ -101,3 +115,23 @@ background-color: #F0A04B33;
 .neutral {
     background-color:#88cfdf ;
 }
+button {
+    background-color: #183A1D;
+    color: #FEFBE9;
+    border:none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    width: 250px;
+    margin-bottom: 100px;
+  }
+button:hover {
+    color: #39f;
+}
+.flex_b {
+    display: flex;
+  } 
+.center_b {
+    justify-content: center;
+  }

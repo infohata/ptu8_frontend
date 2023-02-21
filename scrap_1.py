@@ -1,27 +1,27 @@
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 
-html = """<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>First HTML Page</title>
-</head>
-<body>
-  <div id="first">
-    <h3 data-example="yes">hi</h3>
-    <p class="special">more special text.</p>
-  </div>
-  <ol>
-    <li class="special">This list item is special.</li>
-    <li class="special">This list item is also special.</li>
-    <li>This list item is not special.</li>
-  </ol>
-  <div data-example="no">bye</div>
-</body>
-</html>
-"""
+# html = """<!DOCTYPE html>
+# <html lang="en">
+# <head>
+#   <meta charset="UTF-8">
+#   <title>First HTML Page</title>
+# </head>
+# <body>
+#   <div id="first">
+#     <h3 data-example="yes">hi</h3>
+#     <p class="special">more special text.</p>
+#   </div>
+#   <ol>
+#     <li class="special">This list item is special.</li>
+#     <li class="special">This list item is also special.</li>
+#     <li>This list item is not special.</li>
+#   </ol>
+#   <div data-example="no">bye</div>
+# </body>
+# </html>
+# """
 
-soup = BeautifulSoup(html, "html.parser")
+# soup = BeautifulSoup(html, "html.parser")
 # print(type(soup))
 # print(soup.body)
 # print(soup.body.div)
@@ -38,11 +38,11 @@ soup = BeautifulSoup(html, "html.parser")
 # print(soup.select('[data-example="no"]')) # atributams su specifine reiksme
 # ---------------------------------------------------
 # for element in soup.select('.special'):
-    # print(element.name)
-    # print(element.get_text())
+#     print(element.name)
+#     print(element.get_text())
 # for element in soup.select('[data-example]'):
-    # print(element.attrs)
-    # print(element.get_attribute_list('data-example'))
+#     print(element.attrs)
+#     print(element.get_attribute_list('data-example'))
 # ---------------------------------------------------
 # attribute = soup.select('#first')[0]['id']
 # print(attribute)
